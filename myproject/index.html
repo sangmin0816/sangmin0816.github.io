@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="subject" content="">
+    <meta name="description" content="">
+    <meta name="copyright" content="">
+    <meta name="robots" content="index,follow">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>천재교육</title>
+    <meta name="Description" content="앞선 생각으로 더 큰 미래의 교육을 준비하는 기업">
+    <meta name="Keywords" content="천재교육, 천재교육 교과서">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="천재교육">
+    <meta property="og:description" content="앞선 생각으로 더 큰 미래의 교육을 준비하는 기업">
+    <meta property="og:image" content="https://www.chunjae.co.kr/webdata/_cj/www/meta/chunjae_logo.png">
+    <meta property="og:url" content="https://www.chunjae.co.kr">
+
+    <link rel="shortcut icon" href="assets/fc.ico">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./header.css">
+</head>
+
+<body style="overflow: hidden; height: 100%;">
+<div id="#wrap">
+
+    <!-- header -->
+    <header id="header">
+        <h1 class="logo" ui-sref="main" href="#/main">
+            <a href="" title="천재교육 메인페이지로 이동">천재교육</a>
+        </h1>
+        <!-- gnb -->
+        <nav class="gnb">
+            <ul id="gnb">
+                <li id="gnb_company">
+                    <a href="" class="btn-gnb">회사소개</a>
+                    <ul class="gnb-sub">
+                        <li><a href="">회사개요</a></li>
+                        <li><a href="">인사말</a></li>
+                        <li><a href="">연혁</a></li>
+                        <li><a href="">경영이념</a></li>
+                        <li><a href="">CI</a></li>
+                        <li><a href="">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li id="gnb_business">
+                    <a href="" class="btn-gnb">사업영역</a>
+                    <ul class="gnb-sub">
+                        <li><a ui-sref="textbook01" href="#/textbook01">교과서</a></li>
+                        <li><a ui-sref="reference01" href="#/reference01">참고서</a></li>
+                        <li><a ui-sref="innovate01" href="#/innovate01">스마트러닝</a></li>
+                        <li><a ui-sref="edutech01" href="#/edutech01">에듀테크</a></li>
+                        <li><a ui-sref="reference02" href="#/reference02">출판</a></li>
+                        <li><a ui-sref="print01" href="#/print01">인쇄/물류</a></li>
+                        <li><a ui-sref="franchise01" href="#/franchise01">학원·공부방</a></li>
+                        <li><a ui-sref="character01" href="#/character01">캐릭터</a></li>
+                        <li><a ui-sref="construction01" href="#/construction01">건설</a></li>
+                    </ul>
+                </li>
+                <li id="gnb_social">
+                    <a href="" class="btn-gnb">사회공헌</a>
+                    <ul class="gnb-sub">
+                        <li><a ui-sref="social01" href="#/social01">학습봉사</a></li>
+                        <li><a ui-sref="social02" href="#/social02">지역사회후원</a></li>
+                        <li><a ui-sref="social03" href="#/social03">학회지원</a></li>
+                        <li><a ui-sref="social04" href="#/social04">공교육지원</a></li>
+                    </ul>
+                </li>
+                <li id="gnb_advertise">
+                    <a href="" class="btn-gnb">홍보</a>
+                    <ul class="gnb-sub">
+                        <li><a ui-sref="chunjaeNews" href="#/chunjaeNews">언론보도</a></li>
+                        <li><a ui-sref="news" href="#/news">SNS</a></li>
+                        <li><a ui-sref="cm" href="#/cm">광고</a></li>
+                        <li><a ui-sref="awards" href="#/awards">수상</a></li>
+                        <li><a ui-sref="stories" href="#/stories">천재이야기</a></li>
+                    </ul>
+                </li>
+                <li id="gnb_brand">
+                    <a ui-sref="brand" class="btn-gnb brand" href="#/brand">브랜드</a>
+                    <ul class="gnb-sub">
+                        <a ui-sref="brand" class="brand" href="#/brand">브랜드 소개</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- //gnb -->
+
+        <!-- 20190612 대표사이트 언어선택 / 채용 -->
+        <div class="header util-wrapper">
+            <nav class="util-lang">
+                <a class="btn-lang">KR</a>
+                <ul>
+                    <li><span class="btn-arrow">arrow</span><a ui-sref="main" class="sel-lang on" href="#/main">KR</a></li>
+                    <li><a ui-sref="main_en" class="sel-lang" href="#/eng/main">EN</a></li>
+                    <li><a ui-sref="main_ch" class="sel-lang" href="#/chn/main">CN</a></li>
+                </ul>
+            </nav>
+            <ul class="util-link">
+                <li><a ng-href="https://book.chunjae.co.kr/" class="textbook" target="_blank" title="새창 이동" href="https://book.chunjae.co.kr/"><span>교재</span></a></li>
+                <li><a ng-href="https://mall.chunjae.co.kr" class="mall" target="_blank" title="새창 이동" href="https://mall.chunjae.co.kr"><span>쇼핑몰</span></a></li>
+                <li><a ng-href="https://join.chunjae.co.kr" class="career" target="_blank" title="새창 이동" href="https://join.chunjae.co.kr"><span>채용</span></a></li>
+            </ul>
+        </div>
+        <!--// 20190612 대표사이트 언어선택 / 채용 -->
+
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <div id="content" class="content">
+        <div class="sectionWrap fullpage-wrapper" id="fullpage" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, -27px, 0px); transition: all 700ms ease 0s;">
+            <main class="section mainKey fp-section fp-table active fp-completely" id="section1" data-fp-styles="null" data-anchor="page1" style="height: 565px;">
+                <div class="wrapKey swiper-container swiper-container-fade swiper-container-horizontal">
+                        <ul class="listKey swiper-wrapper" style="transition-duration: 0ms;"><li class="list03 swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 1920px; transition-duration: 0ms; opacity: 0; transform: translate3d(0px, 0px, 0px);">
+                                <p>“나눔의 힘! 실천의 힘!”<strong>작은 따뜻함으로 세상을 <br class="show-tablet show-mobile">바꿉니다</strong></p>
+                            </li>
+                            <!--
+                            <li class="list02">
+                                <p>대한민국 교육의 내일,<strong>천재교육이 만들어가겠습니다</strong></p>
+                            </li>
+                            -->
+                            <li class="list01 swiper-slide swiper-slide-prev swiper-slide-duplicate-next" style="display: block; width: 1920px; transition-duration: 0ms; opacity: 0; transform: translate3d(-1920px, 0px, 0px);" data-swiper-slide-index="0">
+                                <p>교육에 대한 끊임없는 도전<strong>행복한 내일을 함께 합니다</strong></p>
+                            </li>
+                            <li class="list03 swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 1920px; transition-duration: 0ms; opacity: 1; transform: translate3d(-3840px, 0px, 0px);">
+                                <p>“나눔의 힘! 실천의 힘!”<strong>작은 따뜻함으로 세상을 <br class="show-tablet show-mobile">바꿉니다</strong></p>
+                            </li>
+                        <li class="list01 swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" style="display: block; width: 1920px; transition-duration: 0ms; opacity: 0; transform: translate3d(-5760px, 0px, 0px);" data-swiper-slide-index="0">
+                                <p>교육에 대한 끊임없는 도전<strong>행복한 내일을 함께 합니다</strong></p>
+                            </li></ul>
+                        <div class="ctrlKey">
+                            <div class="swiper-pagination pagKeyVis swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+                            <button class="btnCtrlKey"></button>
+                        </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+
+                <div class="wrapRange swiper-container swiper-container-horizontal">
+                    <ul class="listRange swiper-wrapper">
+                        <li class="listSoc03 swiper-slide swiper-slide-active">
+                            <a ui-sref="innovate01" href="#/innovate01">
+                                <dl>
+                                    <dt><em>01</em>SMART LEARNING</dt>
+                                    <dd>스마트러닝</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="listSoc02 swiper-slide swiper-slide-next">
+                            <a ui-sref="reference01" href="#/reference01">
+                                <dl>
+                                    <dt><em>02</em>reference book</dt>
+                                    <dd>참고서</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="listSoc01 swiper-slide">
+                            <a ui-sref="textbook01" href="#/textbook01">
+                                <dl>
+                                    <dt><em>03</em>textbook</dt>
+                                    <dd>교과서</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="listSoc08 swiper-slide">
+                            <a ui-sref="franchise01" href="#/franchise01">
+                                <dl>
+                                    <dt><em>04</em>academy/FRANCHISE</dt>
+                                    <dd>학원·공부방</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="listSoc09 swiper-slide">
+                            <a ui-sref="character01" href="#/character01">
+                                <dl>
+                                    <dt><em>05</em>Character</dt>
+                                    <dd>캐릭터</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="listSoc06 swiper-slide">
+                            <a ui-sref="edutech01" href="#/edutech01">
+                                <dl>
+                                    <dt><em>06</em>edutech</dt>
+                                    <dd>에듀테크</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="listSoc07 swiper-slide">
+                            <a ui-sref="reference02" href="#/reference02">
+                                <dl>
+                                    <dt><em>07</em> PUBLICATION</dt>
+                                    <dd>출판</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="listSoc05 swiper-slide">
+                            <a ui-sref="print01" href="#/print01">
+                                <dl>
+                                    <dt><em>08</em> print/ logistics</dt>
+                                    <dd>인쇄/물류</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li class="listSoc10 swiper-slide">
+                            <a ui-sref="construction01" href="#/construction01">
+                                <dl>
+                                    <dt><em>09</em>CONSTRUCTION</dt>
+                                    <dd>건설</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-next listNext listBtn" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+                    <div class="swiper-button-prev listPrev listBtn swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </main>
+
+
+            <section class="section secSocial fp-section fp-table" id="section2" data-fp-styles="null" data-anchor="page2" style="height: 565px;"><div class="fp-tableCell" style="height: 565px;">
+                <div class="txtBox">
+                    <h2 class="tit">사회공헌</h2>
+                    <p class="sTit">천재교육은 기업과 사회, 환경이 공존하는 아름다운 세상을 꿈꾸고 있습니다.</p>
+                </div>
+                <div class="socialBox swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(456.484px, 0px, 0px);">
+                        <div class="item item1 swiper-slide swiper-slide-active">
+                            <a ui-sref="social01" href="#/social01">
+                                <p class="txt">아이들에게<br> 용기와 희망을 전하는</p>
+                                <h3>학습봉사</h3>
+                                <span class="arr"></span>
+                            </a>
+                            <div class="bg"></div>
+                        </div>
+                        <div class="item item2 swiper-slide swiper-slide-next">
+                            <a ui-sref="social02" href="#/social02">
+                                <p class="txt">모두가 행복한<br> 세상을 위한</p>
+                                <h3>지역사회 후원</h3>
+                                <span class="arr"></span>
+                            </a>
+                            <div class="bg"></div>
+                        </div>
+                        <div class="item item3 swiper-slide">
+                            <a ui-sref="social03" href="#/social03">
+                                <p class="txt">미래 교육 발전을 위한<br> 길에 동행하는</p>
+                                <h3>학회 지원</h3>
+                                <span class="arr"></span>
+                            </a>
+                            <div class="bg"></div>
+                        </div>
+                        <div class="item item4 swiper-slide">
+                            <a ui-sref="social04" href="#/social04">
+                                <p class="txt">배움의 기회를 통해<br> 꿈을 키워갈 수 있는</p>
+                                <h3>공교육 지원</h3>
+                                <span class="arr"></span>
+                            </a>
+                            <div class="bg"></div>
+                        </div>
+                    </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+            </section>
+
+
+            <section class="section secMedia fp-section fp-table" id="section3" data-fp-styles="null" data-anchor="page3" style="height: 565px;"><div class="fp-tableCell" style="height: 565px;">
+                <div class="txtBox">
+                    <h2 class="tit">미디어</h2>
+                    <p class="sTit">천재교육의 보도자료와 SNS 콘텐츠를 소개합니다.</p>
+                </div>
+                <div class="mediaBox">
+                    <div class="mediaBoxWrap swiper-container-horizontal">
+                        <ul class="mediaList swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                            <li class="item notice swiper-slide swiper-slide-active" data-ng-init="newsList()">
+                                <h3>언론보도</h3>
+                                <ul class="list">
+                                    <!-- ngRepeat: news in news_data_list --><li ng-repeat="news in news_data_list" class="ng-scope">
+                                        <a href="http://edu.donga.com/?p=article&amp;ps=view&amp;at_no=20230712114612462200" class="subject ng-binding" target="_blank">천재교과서 스마트해법영어, 매일경제 100대 프랜차이즈 선정</a>
+                                        <span class="date ng-binding">2023-07-13</span>
+                                    </li><!-- end ngRepeat: news in news_data_list --><li ng-repeat="news in news_data_list" class="ng-scope">
+                                        <a href="http://www.it-b.co.kr/news/articleView.html?idxno=69230" class="subject ng-binding" target="_blank">천재교과서, 전 과목 초등 공부방 T클래스 7월 전국 학력평가 실시</a>
+                                        <span class="date ng-binding">2023-07-13</span>
+                                    </li><!-- end ngRepeat: news in news_data_list -->
+                                </ul>
+                                <a href="#/news" ui-sref="news" class="btnMore">언론보도 더보기</a>
+                            </li>
+                            <!-- ngRepeat: sns in sns_data_list --><li class="item social swiper-slide ng-scope swiper-slide-next" ng-repeat="sns in sns_data_list" ng-switch="" on="sns.Origin" ng-class="customClass(sns.FileName, sns.FilePath)">
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' --><a ng-if="customClass(sns.FileName, sns.FilePath) != 'ty2'" ng-href="https://blog.naver.com/storychunjae/223154819558" target="_blank" class="link ng-scope" alt="새창이동" href="https://blog.naver.com/storychunjae/223154819558">
+                                        <span class="thumb">
+                                            <img src="/webdata/_CJ/CommonBoard/chunjaenews/2023/07//체크체크.png" alt="">
+                                            <!-- <img src="{{IMG_PREFIX.COMMONBOARD}}{{sns.FilePath}}/{{sns.FileName}}" alt="뉴스 이미지"> -->
+                                        </span>
+                                    <div class="info">
+                                        <strong class="subject ng-binding">나에게 딱 맞는 중등수학문제집! 2천6백만의 선택, 체크체크! </strong>
+                                        <div class="etc">
+                                            <!-- ngSwitchWhen: youtube -->
+                                            <!-- ngSwitchWhen: 유튜브 -->
+                                            <!-- ngSwitchWhen: blog -->
+                                            <!-- ngSwitchWhen: 블로그 --><em ng-switch-when="블로그" class="ico blog ng-scope">블로그</em><!-- end ngSwitchWhen: -->
+                                            <!-- ngSwitchWhen: cafe -->
+                                            <!-- ngSwitchWhen: 카페 -->
+                                            <!-- ngSwitchWhen: facebook -->
+                                            <!-- ngSwitchWhen: 페이스북 -->
+                                            <!-- ngSwitchWhen: insta -->
+                                            <!-- ngSwitchWhen: 인스타그램 -->
+                                            <!-- ngSwitchWhen: 에듀동아 -->
+                                            <span class="date ng-binding">2023-07-18</span>
+                                        </div>
+                                    </div>
+                                </a><!-- end ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' -->
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) == 'ty2' -->
+                            </li><!-- end ngRepeat: sns in sns_data_list --><li class="item social swiper-slide ng-scope" ng-repeat="sns in sns_data_list" ng-switch="" on="sns.Origin" ng-class="customClass(sns.FileName, sns.FilePath)">
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' --><a ng-if="customClass(sns.FileName, sns.FilePath) != 'ty2'" ng-href="https://blog.naver.com/storychunjae/223151916087" target="_blank" class="link ng-scope" alt="새창이동" href="https://blog.naver.com/storychunjae/223151916087">
+                                        <span class="thumb">
+                                            <img src="/webdata/_CJ/CommonBoard/chunjaenews/2023/07//밀크티아이.png" alt="">
+                                            <!-- <img src="{{IMG_PREFIX.COMMONBOARD}}{{sns.FilePath}}/{{sns.FileName}}" alt="뉴스 이미지"> -->
+                                        </span>
+                                    <div class="info">
+                                        <strong class="subject ng-binding">혼잣말하는 우리 아이, 걱정된다면? 이렇게 해보세요! </strong>
+                                        <div class="etc">
+                                            <!-- ngSwitchWhen: youtube -->
+                                            <!-- ngSwitchWhen: 유튜브 -->
+                                            <!-- ngSwitchWhen: blog -->
+                                            <!-- ngSwitchWhen: 블로그 --><em ng-switch-when="블로그" class="ico blog ng-scope">블로그</em><!-- end ngSwitchWhen: -->
+                                            <!-- ngSwitchWhen: cafe -->
+                                            <!-- ngSwitchWhen: 카페 -->
+                                            <!-- ngSwitchWhen: facebook -->
+                                            <!-- ngSwitchWhen: 페이스북 -->
+                                            <!-- ngSwitchWhen: insta -->
+                                            <!-- ngSwitchWhen: 인스타그램 -->
+                                            <!-- ngSwitchWhen: 에듀동아 -->
+                                            <span class="date ng-binding">2023-07-13</span>
+                                        </div>
+                                    </div>
+                                </a><!-- end ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' -->
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) == 'ty2' -->
+                            </li><!-- end ngRepeat: sns in sns_data_list --><li class="item social swiper-slide ng-scope" ng-repeat="sns in sns_data_list" ng-switch="" on="sns.Origin" ng-class="customClass(sns.FileName, sns.FilePath)">
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' --><a ng-if="customClass(sns.FileName, sns.FilePath) != 'ty2'" ng-href="https://www.instagram.com/p/CugtL25pPYh/?utm_source=ig_web_copy_link&amp;igshid=MzRlODBiNWFlZA==" target="_blank" class="link ng-scope" alt="새창이동" href="https://www.instagram.com/p/CugtL25pPYh/?utm_source=ig_web_copy_link&amp;igshid=MzRlODBiNWFlZA==">
+                                        <span class="thumb">
+                                            <img src="/webdata/_CJ/CommonBoard/chunjaenews/2023/07//짝꿍도서.png" alt="">
+                                            <!-- <img src="{{IMG_PREFIX.COMMONBOARD}}{{sns.FilePath}}/{{sns.FileName}}" alt="뉴스 이미지"> -->
+                                        </span>
+                                    <div class="info">
+                                        <strong class="subject ng-binding">[추천도서] 초등학교 교과서 짝꿍도서 목록 확인! </strong>
+                                        <div class="etc">
+                                            <!-- ngSwitchWhen: youtube -->
+                                            <!-- ngSwitchWhen: 유튜브 -->
+                                            <!-- ngSwitchWhen: blog -->
+                                            <!-- ngSwitchWhen: 블로그 -->
+                                            <!-- ngSwitchWhen: cafe -->
+                                            <!-- ngSwitchWhen: 카페 -->
+                                            <!-- ngSwitchWhen: facebook -->
+                                            <!-- ngSwitchWhen: 페이스북 -->
+                                            <!-- ngSwitchWhen: insta -->
+                                            <!-- ngSwitchWhen: 인스타그램 --><em ng-switch-when="인스타그램" class="ico instagram ng-scope">인스타그램</em><!-- end ngSwitchWhen: -->
+                                            <!-- ngSwitchWhen: 에듀동아 -->
+                                            <span class="date ng-binding">2023-07-11</span>
+                                        </div>
+                                    </div>
+                                </a><!-- end ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' -->
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) == 'ty2' -->
+                            </li><!-- end ngRepeat: sns in sns_data_list --><li class="item social swiper-slide ng-scope" ng-repeat="sns in sns_data_list" ng-switch="" on="sns.Origin" ng-class="customClass(sns.FileName, sns.FilePath)">
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' --><a ng-if="customClass(sns.FileName, sns.FilePath) != 'ty2'" ng-href="https://blog.naver.com/storychunjae/223149484083" target="_blank" class="link ng-scope" alt="새창이동" href="https://blog.naver.com/storychunjae/223149484083">
+                                        <span class="thumb">
+                                            <img src="/webdata/_CJ/CommonBoard/chunjaenews/2023/07//100인의지혜.png" alt="">
+                                            <!-- <img src="{{IMG_PREFIX.COMMONBOARD}}{{sns.FilePath}}/{{sns.FileName}}" alt="뉴스 이미지"> -->
+                                        </span>
+                                    <div class="info">
+                                        <strong class="subject ng-binding">고1 여름방학 국어 공부하기! 수능 모의 기출, 개념 한 번에! #100인의지혜 </strong>
+                                        <div class="etc">
+                                            <!-- ngSwitchWhen: youtube -->
+                                            <!-- ngSwitchWhen: 유튜브 -->
+                                            <!-- ngSwitchWhen: blog -->
+                                            <!-- ngSwitchWhen: 블로그 --><em ng-switch-when="블로그" class="ico blog ng-scope">블로그</em>
+                                            <span class="date ng-binding">2023-07-11</span>
+                                        </div>
+                                    </div>
+                                </a><!-- end ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' -->
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) == 'ty2' -->
+                            </li><!-- end ngRepeat: sns in sns_data_list --><li class="item social swiper-slide ng-scope" ng-repeat="sns in sns_data_list" ng-switch="" on="sns.Origin" ng-class="customClass(sns.FileName, sns.FilePath)">
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' --><a ng-if="customClass(sns.FileName, sns.FilePath) != 'ty2'" ng-href="https://www.instagram.com/p/CuY-zR1L2Nj/?utm_source=ig_web_copy_link&amp;igshid=MzRlODBiNWFlZA==" target="_blank" class="link ng-scope" alt="새창이동" href="https://www.instagram.com/p/CuY-zR1L2Nj/?utm_source=ig_web_copy_link&amp;igshid=MzRlODBiNWFlZA==">
+                                        <span class="thumb">
+                                            <img src="/webdata/_CJ/CommonBoard/chunjaenews/2023/07//사춘기자녀.png" alt="">
+                                            <!-- <img src="{{IMG_PREFIX.COMMONBOARD}}{{sns.FilePath}}/{{sns.FileName}}" alt="뉴스 이미지"> -->
+                                        </span>
+                                    <div class="info">
+                                        <strong class="subject ng-binding">사춘기 자녀와 대화하는 방법 </strong>
+                                        <div class="etc">
+                                            <!-- ngSwitchWhen: youtube -->
+                                            <!-- ngSwitchWhen: 유튜브 -->
+                                            <!-- ngSwitchWhen: blog -->
+                                            <!-- ngSwitchWhen: 블로그 -->
+                                            <!-- ngSwitchWhen: cafe -->
+                                            <!-- ngSwitchWhen: 카페 -->
+                                            <!-- ngSwitchWhen: facebook -->
+                                            <!-- ngSwitchWhen: 페이스북 -->
+                                            <!-- ngSwitchWhen: insta -->
+                                            <!-- ngSwitchWhen: 인스타그램 --><em ng-switch-when="인스타그램" class="ico instagram ng-scope">인스타그램</em><!-- end ngSwitchWhen: -->
+                                            <!-- ngSwitchWhen: 에듀동아 -->
+                                            <span class="date ng-binding">2023-07-08</span>
+                                        </div>
+                                    </div>
+                                </a><!-- end ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' -->
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) == 'ty2' -->
+                            </li><!-- end ngRepeat: sns in sns_data_list --><li class="item social swiper-slide ng-scope" ng-repeat="sns in sns_data_list" ng-switch="" on="sns.Origin" ng-class="customClass(sns.FileName, sns.FilePath)">
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' --><a ng-if="customClass(sns.FileName, sns.FilePath) != 'ty2'" ng-href="https://blog.naver.com/storychunjae/223148302889" target="_blank" class="link ng-scope" alt="새창이동" href="https://blog.naver.com/storychunjae/223148302889">
+                                        <span class="thumb">
+                                            <img src="/webdata/_CJ/CommonBoard/chunjaenews/2023/07//밀크티.png" alt="">
+                                            <!-- <img src="{{IMG_PREFIX.COMMONBOARD}}{{sns.FilePath}}/{{sns.FileName}}" alt="뉴스 이미지"> -->
+                                        </span>
+                                    <div class="info">
+                                        <strong class="subject ng-binding">초등 수학을 잘하기 위한 관문, 구구단 쉽게 외우는 팁 </strong>
+                                        <div class="etc">
+                                            <!-- ngSwitchWhen: youtube -->
+                                            <!-- ngSwitchWhen: 유튜브 -->
+                                            <!-- ngSwitchWhen: blog -->
+                                            <!-- ngSwitchWhen: 블로그 --><em ng-switch-when="블로그" class="ico blog ng-scope">블로그</em><!-- end ngSwitchWhen: -->
+                                            <!-- ngSwitchWhen: cafe -->
+                                            <!-- ngSwitchWhen: 카페 -->
+                                            <!-- ngSwitchWhen: facebook -->
+                                            <!-- ngSwitchWhen: 페이스북 -->
+                                            <!-- ngSwitchWhen: insta -->
+                                            <!-- ngSwitchWhen: 인스타그램 -->
+                                            <!-- ngSwitchWhen: 에듀동아 -->
+                                            <span class="date ng-binding">2023-07-06</span>
+                                        </div>
+                                    </div>
+                                </a><!-- end ngIf: customClass(sns.FileName, sns.FilePath) != 'ty2' -->
+                                <!-- ngIf: customClass(sns.FileName, sns.FilePath) == 'ty2' -->
+                            </li><!-- end ngRepeat: sns in sns_data_list --><li>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    <div class="btnCtrl">
+                        <a href="#" class="btn next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false">
+                            <span>다음으로 이동</span>
+                        </a>
+                        <a href="#" class="btn prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true">
+                            <span>이전으로 이동</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+        </div>
+    </div>
+    <!-- //content -->
+
+    <!-- footer -->
+    <section class="section fp-auto-height secFooter fp-section fp-table" id="section4" data-fp-styles="null" style="height: 565px;">
+        <div class="fp-tableCell" style="height: 565px;">
+            <div ng-include="" src="'components/include/footer.html'" class="ng-scope">
+                <footer id="footer" class="ng-scope">
+                <section class="foot-top">
+                    <h2 class="tit-foot">천재교육</h2>
+                    <ul class="link-foot">
+                        <li><a href="#/partnership" ui-sref="partnership" class="txt-info-foot">제휴문의</a></li>
+                        <!-- <li><a href="#" class="txt-info-foot">개인정보처리방침</a></li> -->
+                        <li><a href="" ng-click="$root.showEmailConfirm()" class="txt-info-foot">이메일 무단 수집거부</a></li>
+                    </ul>
+                    <div class="util-foot">
+                        <ul class="sns-foot">
+                            <li><a href="https://www.facebook.com/ChunjaeEdu/" ng-href="https://www.facebook.com/ChunjaeEdu/" class="btn-sns-foot fb" target="_blank" title="천재교육 페이스북 새 창 열림">facebook</a></li>
+                            <li><a href="https://cafe.naver.com/tunemom" ng-href="https://cafe.naver.com/tunemom" class="btn-sns-foot cafe" target="_blank" title="천재교육 카페 새 창 열림">cafe</a></li>
+                            <li><a href="https://blog.naver.com/storychunjae" ng-href="https://blog.naver.com/storychunjae" class="btn-sns-foot blog" target="_blank" title="천재교육 블로그 새 창 열림">blog</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCMHZZaDM1kJqJUkQ6jFQPeQ/featured" ng-href="https://www.youtube.com/channel/UCMHZZaDM1kJqJUkQ6jFQPeQ/featured" class="btn-sns-foot tube" target="_blank" title="천재교육 유투브 새 창 열림">youtube</a></li>
+                            <li><a href="https://www.instagram.com/chunjae_edu/" ng-href="https://www.instagram.com/chunjae_edu/" class="btn-sns-foot insta" target="_blank" title="천재교육 인스타그램 새 창 열림">instagram</a></li>
+                        </ul>
+                        <div class="family-foot">
+                            <a class="btn-family-foot" href="javascript:$('a.btn-family-foot').toggleClass('active');">family site</a>
+                            <ul>
+                                <li><a ng-href="https://book.chunjae.co.kr" target="_blank" class="btn-fa-site" href="https://book.chunjae.co.kr">천재교육 교재</a></li>
+                                <li><a ng-href="https://mall.chunjae.co.kr" target="_blank" class="btn-fa-site" href="https://mall.chunjae.co.kr">천재교육 쇼핑몰</a></li>
+                                <li><a ng-href="https://little.chunjae.co.kr" target="_blank" class="btn-fa-site" href="https://little.chunjae.co.kr">리틀천재</a></li>
+                                <li><a ng-href="http://hme.chunjae.co.kr" target="_blank" class="btn-fa-site" href="http://hme.chunjae.co.kr">HME</a></li>
+                                <li><a ng-href="http://www.edumon.co.kr" target="_blank" class="btn-fa-site" href="http://www.edumon.co.kr">에듀몬</a></li>
+                                <li><a ng-href="http://www.pageshop.co.kr" target="_blank" class="btn-fa-site" href="http://www.pageshop.co.kr">PAGE SHOP</a></li>
+                <!--					<li><a ng-href="http://koc.chunjae.co.kr" target="_blank" class="btn-fa-site">천재학습백과</a></li>-->
+                                <li><a ng-href="https://e-test.chunjae.co.kr" target="_blank" class="btn-fa-site" href="https://e-test.chunjae.co.kr">온라인 성취도 평가</a></li>
+                                <li><a ng-href="http://www.milkt.co.kr" target="_blank" class="btn-fa-site" href="http://www.milkt.co.kr">밀크T초등</a></li>
+                                <li><a ng-href="http://mid.milkt.co.kr" target="_blank" class="btn-fa-site" href="http://mid.milkt.co.kr">밀크T중학</a></li>
+                                <li><a ng-href="http://high.milkt.co.kr/" target="_blank" class="btn-fa-site" href="http://high.milkt.co.kr/">밀크T고등</a></li>
+                <!--					<li><a ng-href="http://www.hbedu.co.kr" target="_blank" class="btn-fa-site">해법에듀</a></li>-->
+                                <li><a ng-href="http://www.prinpia.co.kr" target="_blank" class="btn-fa-site" href="http://www.prinpia.co.kr">프린피아</a></li>
+                                <li><a ng-href="https://join.chunjae.co.kr" target="_blank" class="btn-fa-site" href="https://join.chunjae.co.kr">천재교육 채용</a></li>
+                                <li><a ng-href="https://chunjaetext.co.kr" target="_blank" class="btn-fa-site" href="https://chunjaetext.co.kr">천재교과서</a></li>
+                                <li><a ng-href="https://mall.chunjaetext.co.kr" target="_blank" class="btn-fa-site" href="https://mall.chunjaetext.co.kr">천재교과서 쇼핑몰</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="foot-btm">
+                    <div class="info-foot">
+                        <ul class="info-foot-list">
+                            <li><span class="txt-info-foot">(주)천재교육</span>
+                                <address class="txt-info-foot">서울시 금천구 가산로9길 54</address> <span class="txt-info-foot">대표자 강희철</span></li>
+                            <li><i class="bar-foot"></i> <span class="txt-info-foot">사업자등록번호 119-81-19350</span> <span class="txt-info-foot">통신판매신고번호 제18-439호</span> <span class="txt-info-foot">부가통신사업신고 016712</span></li>
+                            <li class="call-foot">
+                                <a href="tel:1577-0902" class="txt-info-foot tel">천재교육 1577-0902</a>
+                                <a href="tel:1577-0218" class="txt-info-foot tel">리틀천재 1577-0218</a>
+                                <a href="tel:1577-6226" class="txt-info-foot tel">월간우등생학습 1577-6226</a>
+                                <a href="tel:1577-1533" class="txt-info-foot tel">밀크T초등 1577-1533</a>
+                                <a href="tel:1522-5533" class="txt-info-foot tel">밀크T중학 1522-5533</a>
+                                <a href="tel:1522-5533" class="txt-info-foot tel">밀크T고등 1522-5533</a>
+                                <!--a href="tel:1670-0453" class="txt-info-foot tel">전집(유아동전집) 1670-0453</a-->
+                            </li>
+                        </ul>
+                        <p class="txt-copy-foot">COPYRIGHT 1981-2023 CHUNJAE EDUCATION INC. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <figure class="mark-foot">
+                        <img src="../../assets/images/common/img_mark_foot.png" alt="">
+                        <figcaption>
+                            <dl>
+                                <dt>[인증범위]</dt>
+                                <dd>온라인 교육 및 학습지원 서비스 운영</dd>
+                                <dt>[유효기간]</dt>
+                                <dd>2023.03.25~2026.03.24</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </section>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <!-- //footer -->
+</div>
+</body>
+</html>
