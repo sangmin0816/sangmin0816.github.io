@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.contents {
+    padding-top: 2vh;
+    width:100%;
+}
+
+.page {
+    height: 100vh;
+}
+
+.swiper .img{
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img .title{
+    display: block;
+    font-size: 50px;
+    color: white;
+    padding-left: 10%;
+    padding-top: 10%;
+    line-height: 1.4;
+}
+
+.img .title strong{
+    font-weight: bold;
+}
+
+#home_main_img_01{
+    background-image: url(./img/home_main_02.jpg);
+}
+
+#home_main_img_02{
+    background-image: url(./img/home_main_01.jpg);
+}
