@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /* 스타일 사용자 정의 초기화 */
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0;}
+
 body, html { width: 100%; font-family: 'Noto Sans KR'; overflow-x: hidden; 
 -ms-overflow-style:none;     scrollbar-width:none;}
 body::-webkit-scrollbar, html::-webkit-scrollbar { display:none; }
@@ -10,7 +11,7 @@ ul { list-style: none; }
 a { text-decoration: none; color:#333; }
 img { border:0; }
 .wrap { clear:both; width: 100%; }
-.wrap::after { content:""; display:block; width:100%; clear:both; }
+.wrap::after { content:""; width:100%; clear:both; }
 
 .to_top {
     display: block;
@@ -25,4 +26,10 @@ img { border:0; }
     bottom: 30px;
     border-radius: 100%;
     color: white;
+}
+
+.row_ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
