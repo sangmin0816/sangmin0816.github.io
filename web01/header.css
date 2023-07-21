@@ -69,7 +69,7 @@ align-items: row menu 안의 리스트 가로 정렬을 중심으로 설정
 .main_menu{
     max-width: 130px;
     width: 90%;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .main_menu a{
