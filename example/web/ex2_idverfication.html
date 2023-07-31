@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+<h2>아이디 검증</h2>
+<form action="" id="frm2" name="frm2">
+    <input type="text" name="id" id="id" required>
+    <button type="button" onclick="idcheck()">아이디 중복 체크</button>
+</form>
+<script>
+    function idcheck() {
+        var id = document.getElementById("id");
+        var win1;
+        if (id.value == "") {
+            alert("아이디 입력칸이 비어있습니다.");
+            id.focus();
+            return false;
+        } else {
+            win1 = window.open("idcheck.html", "child", "width=400, height=300, top=100, left=100, location=no, menubar=no, toolbar = no ");
+        }
+    }
+</script>
+</body>
+
+</html>

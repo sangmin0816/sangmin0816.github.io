@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript example - select location move</title>
+</head>
+
+<body>
+<h2>사이트 이동</h2>
+<hr>
+<select name="sel" id="sel">
+    <option value="">-- 선택안함 --</option>
+    <option value="https://www.naver.com">네이버</option>
+    <option value="http://www.daum.net">다음</option>
+    <option value="https://www.google.com">구글</option>
+</select>
+<script>
+    var sel = document.getElementById("sel");
+    sel.addEventListener("change", function(e) {
+        location.href = sel.value;
+    });
+</script>
+</body>
+
+</html>
