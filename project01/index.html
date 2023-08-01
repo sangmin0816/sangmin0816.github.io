@@ -94,13 +94,51 @@
                     </li>
                 </ul>
                 <ul class="row_ul" id="swiper_ctrl">
-                    <li><button type="button" class="swiper_btn"></button></li>
-                    <li><button type="button" class="swiper_btn"></button></li>
-                    <li><button type="button" class="swiper_btn"></button></li>
+                    <li><button type="button" class="swiper_btn" onclick="change01()"></button></li>
+                    <li><button type="button" class="swiper_btn" onclick="change02()"></button></li>
+                    <li><button type="button" id="swiper_stop" onclick="change03()">||</button></li>
                 </ul>
             </figure>
-            <div class="page">
-
+            <script>
+                var swiper_img = document.getElementById("home_main_img_01");
+                var swiper_stop = document.getElementById("swiper_stop");
+                function change01(){
+                    swiper_img.id = "home_main_img_01";
+                }
+                function change02(){
+                    swiper_img.id = "home_main_img_02";
+                }
+                function change03(){
+                    if(swiper_stop.innerHTML=="||"){
+                        swiper_stop.innerHTML = "▶"; 
+                        clearInterval(swiper_interval);
+                    }
+                    else{
+                        swiper_stop.innerHTML = "||";
+                        swiper_interval = setInterval(swiper_time, 10000);
+                    }
+                }
+                function swiper_time(){
+                    if(swiper_img.id== "home_main_img_01"){
+                        swiper_img.id = "home_main_img_02";
+                    }
+                    else{
+                        swiper_img.id = "home_main_img_01";
+                    }
+                }
+                var swiper_interval = setInterval(swiper_time, 10000);
+            </script>
+            <div class="page" id="main_page1">
+                <div class="center">
+                    <h2 class="h2">샬라샬라</h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus quam, mattis at tortor at, auctor varius magna. Integer congue venenatis accumsan. Cras vestibulum nec sapien quis luctus. Quisque eu risus non mauris condimentum pretium. Proin pretium porta magna, nec lacinia ex porta nec. Praesent nulla quam, efficitur id enim quis, tempor lacinia nunc. Donec semper efficitur massa ac venenatis.</p>
+                    <br>
+                    <h2 class="h2">샬라샬라</h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus quam, mattis at tortor at, auctor varius magna. Integer congue venenatis accumsan. Cras vestibulum nec sapien quis luctus. Quisque eu risus non mauris condimentum pretium. Proin pretium porta magna, nec lacinia ex porta nec. Praesent nulla quam, efficitur id enim quis, tempor lacinia nunc. Donec semper efficitur massa ac venenatis.</p>
+                    <br>
+                    <h2 class="h2">샬라샬라</h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus quam, mattis at tortor at, auctor varius magna. Integer congue venenatis accumsan. Cras vestibulum nec sapien quis luctus. Quisque eu risus non mauris condimentum pretium. Proin pretium porta magna, nec lacinia ex porta nec. Praesent nulla quam, efficitur id enim quis, tempor lacinia nunc. Donec semper efficitur massa ac venenatis.</p>
+                </div>
             </div>
         </div>
 
@@ -115,12 +153,15 @@
                         </ul>
                     </nav>    
                 </div>
+                <hr style="background:lightgray; height: 1px; border: 0;">
                 <div class="footer_bottom">
                     <p class="copyright">
-                        <span>(주)천재교육</span>
-                        <span>서울특별시 디지털로9길 23 마리오아울렛2관 11층 천재IT교육센터</span>
-                        <span>접수 문의 및 사이트 이용 문의 : 02-3282-8589</span>
-                        <span class="end">밀크T고등 1522-5533</span>
+                        <ul class="row_ul">
+                            <li>(주)천재교육</li>
+                            <li>서울특별시 디지털로9길 23 마리오아울렛2관 11층 천재IT교육센터</li>
+                            <li>접수 문의 및 사이트 이용 문의 : 02-3282-8589</li>
+                            <li>E-Mali: genia@chunjae.co.kr</li>
+                        </ul>
                     </p>
                     <p class="cp">COPYRIGHT 1981-2023 CHUNJAE EDUCATION INC. ALL RIGHTS RESERVED.</p>
                 </div>
