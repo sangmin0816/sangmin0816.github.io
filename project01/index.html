@@ -18,7 +18,7 @@
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="쌤쌤">
-    <meta property="og:description" content="쌤샘 교육">
+    <meta property="og:description" content="쌤샘">
 
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
 
@@ -44,13 +44,13 @@
             <div class="header">
                 <div class="logo">
                     <a href="./index.html">
-                        <img src="./img/logo_wide.png" alt="천재교육">
+                        <img src="./img/high-resolution-logo-color-on-transparent-background.png" alt="로고">
                     </a>
                 </div>
                 <nav class="gnb">
                     <ul class="row_menu">
                         <li class="main_menu">
-                            <a href="">천재교육</a>
+                            <a href="">자기소개</a>
                             <ul class="sub_menu">
                                 <li><a href="">센터소개</a></li>
                                 <li><a href="">교육생 혜택</a></li>
@@ -58,20 +58,20 @@
                             </ul>
                         </li>
                         <li class="main_menu" id="course">
-                            <a href="">과정소개</a>
+                            <a href="">포트폴리오</a>
                             <ul class="sub_menu">
-                                <li><a href="">빅데이터</a></li>
+                                <li><a href="">프론트엔드</a></li>
                                 <li><a href="">Java 풀스택</a></li>
                                 <li><a href="">프로덕트매니저</a></li>
                                 <li><a href="">교육생 후기</a></li>
                             </ul>
                         </li>
                         <li class="main_menu" id="apply">
-                            <a href="">지원하기</a>
+                            <a href="">Contacts</a>
                             <ul class="sub_menu">
-                                <li><a href="">FAQ</a></li>
-                                <li><a href="">모집일정</a></li>
-                                <li><a href="">지원서 작성</a></li>
+                                <li><a href="">블로그</a></li>
+                                <li><a href="">SNS</a></li>
+                                <li><a href="">email</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -86,74 +86,8 @@
             </div>
         </header>
 
-        <div class="content">
-            <figure class="page main">
-                <ul class="swiper img">
-                    <li class="swiper img" id="home_main_img_01">
-                        <h3 class="img title">교육에 대한 끊임없는 도전<br><strong>행복한 내일을 함께 합니다</strong></h3>
-                    </li>
-                </ul>
-                <ul class="row_ul" id="swiper_ctrl">
-                    <li><button type="button" class="swiper_btn" onclick="change01()"></button></li>
-                    <li><button type="button" class="swiper_btn" onclick="change02()"></button></li>
-                    <li><button type="button" id="swiper_stop" onclick="change03()">||</button></li>
-                </ul>
-            </figure>
-            <script>
-                var swiper_img = document.getElementById("home_main_img_01");
-                var swiper_stop = document.getElementById("swiper_stop");
-                function change01(){
-                    swiper_img.id = "home_main_img_01";
-                }
-                function change02(){
-                    swiper_img.id = "home_main_img_02";
-                }
-                function change03(){
-                    if(swiper_stop.innerHTML=="||"){
-                        swiper_stop.innerHTML = "▶"; 
-                        clearInterval(swiper_interval);
-                    }
-                    else{
-                        swiper_stop.innerHTML = "||";
-                        swiper_interval = setInterval(swiper_time, 10000);
-                    }
-                }
-                function swiper_time(){
-                    if(swiper_img.id== "home_main_img_01"){
-                        swiper_img.id = "home_main_img_02";
-                    }
-                    else{
-                        swiper_img.id = "home_main_img_01";
-                    }
-                }
-                var swiper_interval = setInterval(swiper_time, 10000);
-            </script>
-            <div class="page" id="main_page1">
-                <div class="center">
-                    <h2 class="h2">샬라샬라</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus quam, mattis at tortor at, auctor varius magna. Integer congue venenatis accumsan. Cras vestibulum nec sapien quis luctus. Quisque eu risus non mauris condimentum pretium. Proin pretium porta magna, nec lacinia ex porta nec. Praesent nulla quam, efficitur id enim quis, tempor lacinia nunc. Donec semper efficitur massa ac venenatis.</p>
-                    <br>
-                    <h2 class="h2">샬라샬라</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus quam, mattis at tortor at, auctor varius magna. Integer congue venenatis accumsan. Cras vestibulum nec sapien quis luctus. Quisque eu risus non mauris condimentum pretium. Proin pretium porta magna, nec lacinia ex porta nec. Praesent nulla quam, efficitur id enim quis, tempor lacinia nunc. Donec semper efficitur massa ac venenatis.</p>
-                    <br>
-                    <h2 class="h2">샬라샬라</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus quam, mattis at tortor at, auctor varius magna. Integer congue venenatis accumsan. Cras vestibulum nec sapien quis luctus. Quisque eu risus non mauris condimentum pretium. Proin pretium porta magna, nec lacinia ex porta nec. Praesent nulla quam, efficitur id enim quis, tempor lacinia nunc. Donec semper efficitur massa ac venenatis.</p>
-                </div>
-            </div>
-        </div>
-
         <footer>
             <div class="footer">
-                <div class="footer_top">
-                    <nav class="ft_link">
-                        <ul class="row_ul">
-                            <li><a href="">제휴문의</a></li>
-                            <li><a href="">이메일 무단 수집 거부</a></li>
-                            <li><a href="">Contacts</a></li>
-                        </ul>
-                    </nav>    
-                </div>
-                <hr style="background:lightgray; height: 1px; border: 0;">
                 <div class="footer_bottom">
                     <p class="copyright">
                         <ul class="row_ul">
