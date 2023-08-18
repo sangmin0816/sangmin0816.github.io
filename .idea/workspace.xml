@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sangmin0816" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4683afd-bb5a-4d01-bd5e-e44397bf4175" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/sangmin0816.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_tomcat_servlet_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_el_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mariadb_jdbc_java_client.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notice.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sangmin0816.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/admin/AddNoticeCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/admin/AddNoticeProCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/admin/AdminNoticeCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/admin/AdminNoticeListCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/admin/DeleteNoticeCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/admin/UpdateNoticeCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/custom/LoginCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/notice/NoticeCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/notice/NoticeListCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/controller/product/ProListCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/dto/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/dto/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/model/DBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/model/MariaDBCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/model/MemberDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/model/NoticeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/github/sangmin0816/model/PostgreCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/admin/addNotice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/admin/getNotice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/admin/noticeList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/checker-qual-3.31.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/el-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/javax.servlet-api-4.0.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/javax.servlet-api-4.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jsp-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/postgresql-42.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/standard-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/tomcat-servlet-api-9.0.78.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/common.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/custom/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/errorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/forbiddenErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-1.10.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-1.8.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/notFoundErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/notReadyErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/notice/getNotice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/notice/noticeList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/nullErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/product/proList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/serverErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/admin/addNotice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/admin/getNotice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/admin/noticeList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/checker-qual-3.31.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/el-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/javax.servlet-api-4.0.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/javax.servlet-api-4.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/jsp-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/postgresql-42.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/standard-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/lib/tomcat-servlet-api-9.0.78.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/common.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/css/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/custom/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/errorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/forbiddenErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/images/001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/images/002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/images/003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/images/004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/images/005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/images/006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/js/jquery-1.10.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/js/jquery-1.8.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/js/nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/notFoundErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/notReadyErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/notice/getNotice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/notice/noticeList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/nullErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/product/proList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/serverErrorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WBS양식.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.idea/artifacts/test0801_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.idea/libraries/javax_servlet_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/EX9_Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex10_Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex11_MemberServiceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex12_CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex13_Notice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex14_DataAccessObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex15_ExceptionEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex16_Container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex17_BoardList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex18_MapExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex19_Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex1_Scorepro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex20_Lotto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex2_Scorepro2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex3_Gugudan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex4_Starprint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex5_ThreeDepth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex6_Example4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex7_StringSplit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Ex8_Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/Function.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/MySqlDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/example/OracleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test0801.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/clock_base.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/clock_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/clock_ico-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/clock_ico-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/clock_ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/clock_weight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex10_digitalclock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex1_term_agree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex2_idverfication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex3_pageshift.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex4_signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex5_print.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex6_devicejudgement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex7_price.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex8_calculator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/ex9_clock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/fonts/DS-DIGI.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/hour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/idcheck.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/javascript 최종.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/minute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/web/second.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/README.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/contents.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/google.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/coding_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/coding_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/favicon-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/favicon-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/favicon-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/high-resolution-logo-color-on-transparent-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/home_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/home_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/home_main_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/home_main_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/logo-black-long.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/logo-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/logo-color-long.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/logo-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/logo-no-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/img/logo-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project01/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/요구사항정의서_양식.xls" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2U8xya4jj9afuzgJQ69B5ofLdMJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/ChoiSangmin/sangmin0816.github.io/web/web",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3873563",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ChoiSangmin\sangmin0816.github.io\web\web" />
+      <recent name="D:\ChoiSangmin\sangmin0816.github.io\web" />
+      <recent name="D:\ChoiSangmin\sangmin0816.github.io\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.sangmin0816.model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="project1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="project1" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <deployment>
+        <artifact name="sangmin0816">
+          <settings>
+            <option name="CONTEXT_PATH" value="/sangmin0816" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="af9c74c1-b498-4fe2-aea7-427d819f68cc" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59548" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="sangmin0816" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4683afd-bb5a-4d01-bd5e-e44397bf4175" name="Changes" comment="" />
+      <created>1692335263477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692335263477</updated>
+      <workItem from="1692335264540" duration="7000" />
+      <workItem from="1692335294420" duration="340000" />
+      <workItem from="1692335861198" duration="22000" />
+      <workItem from="1692335921967" duration="2767000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
