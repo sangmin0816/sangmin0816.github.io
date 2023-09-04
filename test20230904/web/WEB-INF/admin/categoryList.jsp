@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="box_wrap">
                     <form method="post">
-                        <table class="table table-secondary" id="tb1">
+                        <table class="table table-borderd" id="tb1">
                             <thead>
                             <tr>
                                 <th></th>

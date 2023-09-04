@@ -36,7 +36,7 @@
             </ui>
             <div class="container">
                 <form action="${rootPath}/BookDelete.do" method="post" onsubmit="return deleteTrue()">
-                    <table class="table table-secondary" id="tb1">
+                    <table class="table table-borderd" id="tb1">
                         <thead>
                         <tr>
                             <th></th>

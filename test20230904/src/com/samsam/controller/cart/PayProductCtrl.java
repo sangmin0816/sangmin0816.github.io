@@ -52,7 +52,7 @@ public class PayProductCtrl extends HttpServlet {
 
                 request.setAttribute("mem", member);
 
-                RequestDispatcher view = request.getRequestDispatcher("/pay/productPay.jsp");
+                RequestDispatcher view = request.getRequestDispatcher("/cart/productPay.jsp");
                 view.forward(request,response);
             }
         }

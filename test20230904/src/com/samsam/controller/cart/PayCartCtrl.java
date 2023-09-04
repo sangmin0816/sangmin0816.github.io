@@ -64,7 +64,7 @@ public class PayCartCtrl extends HttpServlet {
 
       request.setAttribute("mem", member);
 
-      RequestDispatcher view = request.getRequestDispatcher("/pay/cartPay.jsp");
+      RequestDispatcher view = request.getRequestDispatcher("/cart/cartPay.jsp");
       view.forward(request,response);
     }
   }

@@ -36,7 +36,9 @@ public class MypageUpdateCtrl extends HttpServlet {
             String[] address = member.getAddress().split("/");
             System.out.println(Arrays.toString(address));
             address1 = address[0];
-            address2 = address[1];
+            if(address.length>1){
+                address2 = address[1];
+            }
         }
 
         request.setAttribute("address1", address1);

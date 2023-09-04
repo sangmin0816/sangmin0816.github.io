@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원 목록</title>
+    <title>메인</title>
     <%@ include file="../../common.jsp"%>
     <link href="../../js/chart.js">
 
@@ -24,6 +24,10 @@
                 <canvas id="myChart" style="width: 500px; height: 500px;"></canvas>
             </div>
         </div>
+        <c:forEach var="profit" items="${profitList}">
+            <p>${profit.title}</p>
+            <p>${profit.amount}</p>
+        </c:forEach>
     </div>
 </div>
 <%@ include file="../../footer.jsp" %>
@@ -39,6 +43,8 @@
         datasets: []
     };
 
+
+
     <c:forEach var="profit" items="${profitList}">
         data.labels.push(${profit.title});
         data.datasets.push({
@@ -47,6 +53,7 @@
             backgroundColor: Object.values(Utils.CHART_COLORS),
         })
     </c:forEach>
+    console.log(data);
 
     const myChart = new Chart(
         document.getElementById('myChart'),
@@ -66,6 +73,7 @@
             },
         }
     );
+
 
     if($("#myChart").html()===""){
         $(".chart-div").html("<h3>차트가 존재하지 않습니다.</h3>");

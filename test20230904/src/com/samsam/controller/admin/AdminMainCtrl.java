@@ -1,10 +1,8 @@
 package com.samsam.controller.admin;
 
 
-import com.samsam.dto.Category;
 import com.samsam.dto.Product;
 import com.samsam.dto.Profit;
-import com.samsam.model.CategoryDAO;
 import com.samsam.model.ProductDAO;
 
 import javax.servlet.RequestDispatcher;
@@ -15,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/AdminMain.do")
@@ -28,11 +25,6 @@ public class AdminMainCtrl extends HttpServlet {
         if(sid!=null && sid.equals("admin")) {
             ProductDAO dao = new ProductDAO();
             List<Profit> profitList = dao.getProfitList();
-
-            for(Profit profit: profitList){
-                Product product = dao.getProduct(profit.getProNo());
-                profit.setTitle(product.getTitle());
-            }
 
             request.setAttribute("profitList", profitList);
 

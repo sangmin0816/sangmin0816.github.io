@@ -16,10 +16,10 @@
 
 <div class="content container">
     <div class="d-flex justify-content-between">
-        <h2>공지사항</h2>
+        <h2>QnA 작성</h2>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">공지사항</li>
+            <li class="breadcrumb-item active" aria-current="page">Qna작성</li>
         </ol>
     </div>
     <hr>

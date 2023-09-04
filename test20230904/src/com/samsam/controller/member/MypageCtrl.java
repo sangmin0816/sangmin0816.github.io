@@ -19,23 +19,28 @@ public class MypageCtrl extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("msg", "나의 정보로 이동합니다.");
 
-        HttpSession session = request.getSession(); // 세션 생성
-        MemberDAO dao = new MemberDAO();
-        Member member = dao.getMember((String) session.getAttribute("session_id"));
+        HttpSession session = request.getSession();
+        String sid = (String) session.getAttribute("session_id");
 
-        request.setAttribute("me", member);
+        if(sid!=null) {
+            MemberDAO dao = new MemberDAO();
+            Member member = dao.getMember(sid);
 
-        String[] address = member.getAddress().split("/");
-        String address1 = address[0];
-        String address2 = "";
-        if(address.length>1){
-            address2 = address[1];
+            request.setAttribute("me", member);
+
+            String[] address = member.getAddress().split("/");
+            String address1 = address[0];
+            String address2 = "";
+            if(address.length>1){
+                address2 = address[1];
+            }
+
+            request.setAttribute("address1", address1);
+            request.setAttribute("address2", address2);
+
+            RequestDispatcher view = request.getRequestDispatcher("/member/mypage.jsp");
+            view.forward(request, response);
         }
-
-        request.setAttribute("address1", address1);
-        request.setAttribute("address2", address2);
-
-        RequestDispatcher view = request.getRequestDispatcher("/member/mypage.jsp");
-        view.forward(request, response);
+        response.sendRedirect(request.getContextPath()+"/");
     }
 }

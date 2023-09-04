@@ -1,4 +1,4 @@
-package com.samsam.controller.cart;
+package com.samsam.controller.member;
 
 import com.samsam.dto.Cart;
 import com.samsam.dto.Delivery;
@@ -51,7 +51,7 @@ public class PayListCtrl extends HttpServlet {
 
     request.setAttribute("payvoList", payvoList);
 
-    RequestDispatcher view = request.getRequestDispatcher("/pay/payList.jsp");
+    RequestDispatcher view = request.getRequestDispatcher("/member/payList.jsp");
     view.forward(request,response);
   }
 }

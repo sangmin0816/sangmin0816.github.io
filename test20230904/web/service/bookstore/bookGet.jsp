@@ -10,14 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>교재 페이지</title>
     <%@ include file="../../common.jsp"%>
-    <style>
-        .content {margin-top: 24px; padding: 24px;}
-        .nav.nav-tabs {margin-top:80px;}
-        .product_detail_top {display:inline-block;vertical-align:middle;}
-        .product_detail_top.img_area {width:450px;text-align:center}
-        .product_detail_top.img_area > img {width:300px;height:auto;}
-        .product_detail_top.detail_area {width:calc(100% - 550px);margin-left:80px;}
-    </style>
 </head>
 
 <body>
@@ -31,7 +23,6 @@
         </ol>
     </div>
     <hr>
-
     <div class="row">
         <div class="col-4 product_detail_top img_area">
             <img class="card-img-top" src="${product.img }" alt="${product.title }" width="100"/>
@@ -59,24 +50,24 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="amount">수량</label>
+                            재고: ${inventory}
                         </td>
                         <td>
-                            <input id="amount" name="amount" type="number" class="form-control" value="1">
+                            <input id="amount" name="amount" type="number" class="form-control" value="1" placeholder="수량">
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2" class="text-center">
                             <c:choose>
                                 <c:when test="${!empty sid}">
-                                    <input class="btn btn-main btn-medium" type="submit" value="장바구니 추가" onclick="addCart()">
+                                    <input class="btn btn-primary btn-medium" type="submit" value="장바구니 추가" onclick="addCart()">
+                                    <input class="btn btn-primary" type="submit" value="결제하기" onclick="payProduct()">
                                     <input type="hidden" name="proNo" value="${product.proNo}">
                                 </c:when>
                                 <c:otherwise>
-                                    <button class="btn btn-main btn-medium" type="button" onclick="location.href='../../member/login.jsp'">장바구니</button>
+                                    <a href="${rootPath}/member/login.jsp" class="btn btn-primary">로그인</a>
                                 </c:otherwise>
                             </c:choose>
-                            <input class="btn btn-main btn-medium" type="submit" value="결제하기" onclick="payProduct()">
                         </td>
                     </tr>
                     </tbody>
@@ -147,7 +138,6 @@
             <a class="btn btn-main btn-secondary" href="${rootPath }/ReviewAdd.do?proNo=${product.proNo }" role="button">리뷰등록</a>
         </c:if>
     </div>
-
 </div>
 
     <%@ include file="../../footer.jsp" %>

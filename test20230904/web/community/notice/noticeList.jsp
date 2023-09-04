@@ -23,7 +23,7 @@
         </ol>
     </div>
     <hr>
-    <table class="table table-secondary" id="tb1">
+    <table class="table table-borderd" id="tb1">
         <thead>
         <tr>
             <th class="item1">번호</th>

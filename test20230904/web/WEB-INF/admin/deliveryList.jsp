@@ -19,7 +19,7 @@
         <div class="container" style="margin-top: 20px;">
             <h2 class="title">배송 관리</h2>
             <div class="container">
-                <table class="table table-secondary" id="tb1">
+                <table class="table table-borderd" id="tb1">
                     <thead>
                     <tr>
                         <th>결제번호</th>

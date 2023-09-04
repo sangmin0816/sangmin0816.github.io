@@ -14,20 +14,6 @@ public class Main extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletContext application = request.getServletContext();
         application.setAttribute("rootPath", request.getContextPath());
-//
-//        ProductDAO dao = new ProductDAO();
-//        List<Product> proList = dao.getNewProductLis();
-//
-//        for(Product pro : proList) {
-//            File isfile = new File( application.getRealPath("/storage/") + pro.getImg());
-//            if(!isfile.exists()) {
-//                pro.setImg(request.getContextPath() + "/images/noimage.jpg");
-//            } else {
-//                pro.setImg(request.getContextPath() + "/storage/" + pro.getImg());
-//            }
-//        }
-//
-//        request.setAttribute("proList", proList);
 
         RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/index.jsp");
         view.forward(request, response);

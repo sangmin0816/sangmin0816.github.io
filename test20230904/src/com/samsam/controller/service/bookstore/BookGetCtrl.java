@@ -32,6 +32,7 @@ public class BookGetCtrl extends HttpServlet {
 
     ProductDAO dao = new ProductDAO();
     Product product = dao.getProduct(proNo);
+    int inventory = dao.getAmount(proNo);
 
     File isfile = new File( application.getRealPath("/storage/") + product.getImg());
     if(!isfile.exists()) {
@@ -54,6 +55,8 @@ public class BookGetCtrl extends HttpServlet {
     boolean reviewPass = reviewDAO.checkReview(sid, proNo);
     List<Review> reviewList = reviewDAO.getReviewList(proNo);
 
+
+    request.setAttribute("inventory", inventory);
     request.setAttribute("product", product);
     request.setAttribute("category", category);
     request.setAttribute("sid", sid);

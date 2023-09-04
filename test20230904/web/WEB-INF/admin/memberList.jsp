@@ -20,7 +20,7 @@
             <h2 class="title">회원</h2>
             <div class="container">
                 <form action="${rootPath}/MemberDelete.do" method="post" onsubmit="return deleteTrue()">
-                    <table class="table table-secondary" id="tb1">
+                    <table class="table table-borderd" id="tb1">
                         <thead>
                             <tr>
                                 <th></th>
@@ -44,7 +44,7 @@
                         </c:forEach>
                         </tbody>
                     </table>
-                    <input class="btn btn-danger" type="submit" value="회원 삭제">
+                    <input class="btn btn-danger" type="submit" value="회원 삭제" onsubmit="deleteTrue()">
 
                 </form>
             </div>

@@ -145,4 +145,47 @@ public class CartDAO {
     }
     return cartList;
   }
+
+  public int isMemberCart(String memid, int proNo){
+    conn = db.connect();
+
+    String sql = "select * from cart where memId=? and proNo=?";
+    try {
+      pstmt = conn.prepareStatement(sql);
+      pstmt.setString(1, memid);
+      pstmt.setInt(2, proNo);
+
+      rs = pstmt.executeQuery();
+
+      if(rs.next()){
+        return rs.getInt("cartNo");
+      } else{
+        return 0;
+      }
+
+    } catch (Exception e) {
+      throw new RuntimeException(e);
+    } finally{
+      db.close(rs, pstmt, conn);
+    }
+  }
+
+  public int updateCartAmount(int cartNo, int amount){
+    conn = db.connect();
+    int cnt = 0;
+
+    String sql = "update cart set amount=amount+? where cartNo=?";
+    try {
+      pstmt = conn.prepareStatement(sql);
+      pstmt.setInt(1, amount);
+      pstmt.setInt(2, cartNo);
+
+      cnt = pstmt.executeUpdate();
+    } catch (Exception e) {
+      throw new RuntimeException(e);
+    } finally{
+      db.close(rs, pstmt, conn);
+    }
+    return cnt;
+  }
 }

@@ -20,7 +20,7 @@
         <div class="container" style="margin-top: 20px;">
             <h2 class="title">공지사항</h2>
             <div class="container">
-                <table class="table table-secondary" id="tb1">
+                <table class="table table-borderd" id="tb1">
                     <thead>
                     <tr>
                         <th class="item1">번호</th>

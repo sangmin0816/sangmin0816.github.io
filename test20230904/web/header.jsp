@@ -34,7 +34,7 @@
                             <li><a class="dropdown-item" href="${rootPath}/NoticeList.do">공지사항</a></li>
                             <li><a class="dropdown-item" href="${rootPath}/QnaList.do">묻고답하기</a></li>
                             <li><a class="dropdown-item" href="${rootPath }/FileboardList.do">학습자료실</a></li>
-                            <li><a class="dropdown-item" href="#">1:1 문의</a></li>
+                            <li><a class="dropdown-item" href="${rootPath}/Online.do">1:1 문의</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -48,11 +48,12 @@
                             <c:when test="${session_id eq 'admin'}">
                                 <li class="nav-item"><a class="nav-link" href="${rootPath }/Logout.do">로그아웃</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${rootPath }/AdminMain.do">관리자</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${rootPath }/Mypage.do">마이페이지</a></li>
                             </c:when>
                             <c:otherwise>
                                 <li class="nav-item"><a class="nav-link" href="${rootPath }/Logout.do">로그아웃</a></li>
+                                <li class="nav-item"><a class="nav-link" href="${rootPath }/Mypage.do">마이페이지</a></li>
                                 <li class="nav-item"><a class="nav-link" href="${rootPath }/CartList.do">장바구니</a></li>
-                                <li class="nav-item"><a class="nav-link" href="${rootPath }/PayList.do">결제 내역</a></li>
                             </c:otherwise>
                         </c:choose>
                     </ul>

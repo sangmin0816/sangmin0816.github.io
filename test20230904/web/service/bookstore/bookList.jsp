@@ -31,28 +31,26 @@
         </ol>
     </div>
     <hr>
-    <div class="row">
-        <c:forEach var="book" items="${bookList }" varStatus="status">
-            <a href="${rootPath }/BookGet.do?proNo=${book.proNo }">
-                <div class="col-md-3">
-                    <div class="product-item">
-                        <div class="product-thumb">
-                            <img class="img-responsive" src="${book.img }" alt="${book.title }" />
-                        </div>
-                        <div class="product-content">
-                            <h4>${book.title }</h4>
-                            <p class="price">${book.price } 원</p>
-                        </div>
+    <div class="d-flex">
+        <c:forEach var="book" items="${bookList }">
+            <div class="card" style="width: 18rem; margin: 10px;">
+                <a href="${rootPath }/BookGet.do?proNo=${book.proNo }">
+                    <img src="${book.img }" alt="${book.title }" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${book.title }</h5>
+                            <%--            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--%>
                     </div>
-                </div>
-            </a>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">${book.price } 원</li>
+                    </ul>
+                </a>
+            </div>
         </c:forEach>
         <c:if test="${empty bookList }">
             <p class="text-center">등록된 상품이 없습니다.</p>
         </c:if>
     </div>
-</div>
-
+    </div>
 <%@ include file="../../footer.jsp" %>
 </body>
 </html>

@@ -14,14 +14,14 @@
 <%@ include file="../../header.jsp"%>
 <div class="content container">
     <div class="d-flex justify-content-between">
-        <h2>공지사항</h2>
+        <h2>Qna</h2>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">공지사항</li>
+            <li class="breadcrumb-item active" aria-current="page">Qna</li>
         </ol>
     </div>
     <hr>
-    <table class="table table-secondary" id="tb1">
+    <table class="table table-borderd" id="tb1">
         <thead>
         <tr>
             <th class="item1">번호</th>

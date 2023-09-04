@@ -34,7 +34,7 @@ public class QnaDAO extends NoticeDAO {
 
       while(rs.next()){
         String regdate = sdf.format(rs.getDate("regdate"));
-        qnaList.add(new Qna(rs.getInt("qno"), rs.getString("title"), rs.getString("content"), rs.getString("author"), regdate, rs.getInt("visited"), rs.getInt("lev"), rs.getInt("par"), rs.getBoolean("secret")));
+        qnaList.add(new Qna(rs.getInt("qno"), rs.getString("title"), rs.getString("content"), rs.getString("memId"), regdate, rs.getInt("visited"), rs.getInt("lev"), rs.getInt("par"), rs.getBoolean("secret")));
       }
 
     } catch (SQLException e) {
@@ -59,7 +59,7 @@ public class QnaDAO extends NoticeDAO {
 
       if(rs.next()){
         String regdate = sdf.format(rs.getDate("regdate"));
-        qna = new Qna(rs.getInt("qno"), rs.getString("title"), rs.getString("content"), rs.getString("author"), regdate, rs.getInt("visited"), rs.getInt("lev"), rs.getInt("par"), rs.getBoolean("secret"));
+        qna = new Qna(rs.getInt("qno"), rs.getString("title"), rs.getString("content"), rs.getString("memId"), regdate, rs.getInt("visited"), rs.getInt("lev"), rs.getInt("par"), rs.getBoolean("secret"));
       }
 
     } catch (SQLException e) {
@@ -75,7 +75,7 @@ public class QnaDAO extends NoticeDAO {
     int cnt = 0;
 
     conn = db.connect();
-    String sql = "insert into qna(title, content, author, lev, par, secret) values(?, ?, ?, ?, ?, ?)";
+    String sql = "insert into qna(title, content, memId, lev, par, secret) values(?, ?, ?, ?, ?, ?)";
 
     try {
       pstmt = conn.prepareStatement(sql);
@@ -108,7 +108,7 @@ public class QnaDAO extends NoticeDAO {
     int cnt = 0;
 
     conn = db.connect();
-    String sql = "update qna set title=?, content=?, author=? where qno=?";
+    String sql = "update qna set title=?, content=?, memId=? where qno=?";
 
     try {
       pstmt = conn.prepareStatement(sql);
