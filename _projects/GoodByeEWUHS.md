@@ -1,7 +1,7 @@
  ---
  name: GoodByeEWUHS
  tools: [Tool1, Tool2]
- image: image url or path here.
+ image: 
  description: Write project description here.
  ---
 
