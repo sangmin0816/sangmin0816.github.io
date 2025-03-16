@@ -1,7 +1,9 @@
 ---
-name: GoodByeEWUHS
-tools: [nothing, important]
-image: https://www.sketchappsources.com/resources/source-image/project-neon-groove-music-ui.png
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-external_url: https://www.google.com
+name: GoodBye EWUHS
+tools: [Flutter, Azure Web App]
+description: Azure를 통해 호스팅한 간단한 정적 웹앱
+
 ---
+[GIT](https://github.com/sangmin0816/GoodByeEWHUS)
+
+# GoodBye EWUHS
