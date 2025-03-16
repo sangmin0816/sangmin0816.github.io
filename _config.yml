@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : sangmin-portfolio
 description         : >-
-                      I used jekyll theme portfolYou
+                      Hello World
 baseurl             : ""            
 # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : sangmin0816/portfolYOU      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
@@ -26,23 +26,23 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Choi Sang-Min
-  image             : https://i.imgur.com/uyDNQnn.jpg
+  image             : https://avatars.githubusercontent.com/u/64889234?v=4
   behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
-  facebook          : your_username
-  github            : sangmin0816
+  email             : sangmin990816@gmail.com
+  # facebook          : your_username
+  github            : https://github.com/sangmin0816
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
   linkedin          : your_username
-  medium            : your_username
+  # medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
-  twitter           : your_username
+  # twitter           : your_username
 # vimeo             : your_username
 # youtube           : your_channel_name
 # keybase           : your_username
