@@ -5,7 +5,7 @@ image: https://private-user-images.githubusercontent.com/64889234/460205165-8aa3
 description: KcBert based hate speech and discrimination filtering chrome extension
 ---
 
-# Hate Speech Comment Blocking Chrome Extension 
+# [Hate Speech Comment Blocking Chrome Extension](https://github.com/sangmin0816/sunflower)
 차별/혐오 댓글 필터링 크롬 익스텐션
 
 ---
