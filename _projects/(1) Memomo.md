@@ -5,9 +5,7 @@ image: https://github.com/sangmin0816/memomo/raw/main/readme/team46_memomo.gif
 description: 패들렛 스타일 포스트잇 웹 게시판
 ---
 
-[git](https://github.com/sangmin0816/memomo)
-
-# Memomo
+# [Memomo] (https://github.com/sangmin0816/memomo)
 # Project6 메모모
 ## 프로젝트 개요
 실시간으로 소통하고 정보를 공유하는 패들렛 스타일의 포스트잇 게시판을 제작하는 프로젝트입니다. 스프링 부트를 활용하여 사용자들이 쉽게 글을 작성하고 공유할 수 있는 플랫폼을 구축하였습니다. 실시간 업데이트와 사용자 친화적인 인터페이스를 통해 새로운 소통 경험을 제공합니다.
