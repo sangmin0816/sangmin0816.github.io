@@ -5,7 +5,7 @@ description: Azure를 통해 호스팅한 간단한 정적 웹앱
 image : https://github.com/sangmin0816/GoodByeEWUHS/raw/main/README/EWUHS.gif
 ---
 
-# [GoodBye EWUHS] (https://github.com/sangmin0816/GoodByeEWHUS)
+# [GoodBye EWUHS](https://github.com/sangmin0816/GoodByeEWHUS)
 
 간단한 플러터 프로젝트로 정적 애플리케이션.
 교육실습을 마무리하며 특별한 편지를 써주고 싶어서 3일동안 만들었다. 정확히는 만드는 건 하루고, 배포가 이틀 내내 시간을 잡아먹었다.
